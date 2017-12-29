@@ -3,7 +3,7 @@ package com.example.tuxzx.coolweather.util;
 import android.text.TextUtils;
 
 import com.example.tuxzx.coolweather.db.City;
-import com.example.tuxzx.coolweather.db.Counry;
+import com.example.tuxzx.coolweather.db.County;
 import com.example.tuxzx.coolweather.db.Province;
 
 import org.json.JSONArray;
@@ -67,7 +67,7 @@ public class Utility {
                 JSONArray allCounties = new JSONArray(response);// JSONException
                 for (int i = 0; i < allCounties.length(); i++) {
                     JSONObject countyObject = allCounties.getJSONObject(i);// JSONException
-                    Counry county = new Counry();
+                    County county = new County();
                     county.setCountyName(countyObject.getString("name"));
                     county.setWeatherId(countyObject.getString("weather_id"));
                     county.setCityId(cityId);
