@@ -60,6 +60,9 @@ public class ChooseAreaFragment extends Fragment {
     //  当前选中的级别
     private int currentLevel;
 
+
+    //  获取控件实例，
+    //  初始化ArrayAdapter并设置为ListView的适配器
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -72,6 +75,7 @@ public class ChooseAreaFragment extends Fragment {
         return view;
     }
 
+    //  给LiseView和Button设置了点击事件
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
