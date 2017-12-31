@@ -7,7 +7,7 @@ package com.example.tuxzx.coolweather.gson;
 public class AQI {
     public AQIcity city;
 
-    private class AQIcity {
+    public class AQIcity {
         public String aqi;
         public String pm25;
     }
